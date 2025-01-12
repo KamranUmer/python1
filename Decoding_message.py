@@ -8,7 +8,7 @@ def decode(message):
     for letter in message:
         if letter in alphabet:
             letter_index = alphabet.index(letter)
-            decoded_letter_index = (26 - (letter_index + 1)) % 26
+            decoded_letter_index = (26 - (letter_index + 1))
             decoded_message += alphabet[decoded_letter_index]
         else:
             decoded_message += letter
